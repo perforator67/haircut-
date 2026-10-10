@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КОНТУР — барбершоп в Санкт-Петербурге | Мужские стрижки и бритьё</title>
+  <meta name="description" content="Премиальный барбершоп КОНТУР в Санкт-Петербурге: мужские стрижки, оформление бороды и королевское бритьё. Онлайн-запись, 3 мастера, атмосфера, в которую хочется возвращаться.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="КОНТУР — барбершоп в Санкт-Петербурге">
+  <meta property="og:description" content="Чёткая линия. Уверенный образ. Мужские стрижки, борода и королевское бритьё в центре города.">
+  <meta property="og:image" content="assets/og-image.svg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+  <header class="header" id="top" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="КОНТУР — на главную">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M16 12V36" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M16 24L31 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M16 24L31 36" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="16" cy="24" r="2.1" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">КОНТУР</span>
+      </a>
+
+      <nav class="nav" id="site-nav" data-nav>
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link" data-nav-link>О нас</a></li>
+          <li><a href="#services" class="nav__link" data-nav-link>Услуги</a></li>
+          <li><a href="#masters" class="nav__link" data-nav-link>Мастера</a></li>
+          <li><a href="#contacts" class="nav__link" data-nav-link>Контакты</a></li>
+        </ul>
+        <button class="btn btn--accent btn--sm nav__cta" type="button" data-open-modal>Записаться</button>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content" data-reveal>
+          <p class="kicker">BARBERSHOP &middot; С 2018</p>
+          <h1 class="hero__title">КОНТУР</h1>
+          <p class="hero__slogan">Чёткая линия. Уверенный образ.</p>
+          <p class="hero__text">Премиальный барбершоп в центре города: авторские стрижки, оформление бороды и королевское бритьё. Место, в которое хочется возвращаться не раз в полгода, а каждые три недели.</p>
+          <div class="hero__actions">
+            <button class="btn btn--accent" type="button" data-open-modal>Записаться</button>
+            <a class="btn btn--ghost" href="#services">Услуги и цены</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <svg viewBox="0 0 420 420" fill="none">
+            <circle cx="210" cy="210" r="170" stroke="#2E2E2E" stroke-width="1"/>
+            <circle cx="210" cy="210" r="130" stroke="#2E2E2E" stroke-width="1"/>
+            <g class="art-float">
+              <!-- ножницы -->
+              <g stroke="#C2A36B" stroke-width="2" stroke-linecap="round" fill="none">
+                <circle cx="150" cy="300" r="14"/>
+                <circle cx="150" cy="248" r="14"/>
+                <path d="M160 290L270 150"/>
+                <path d="M160 258L270 128"/>
+                <path d="M160 290L160 258" stroke="none"/>
+              </g>
+              <!-- расчёска -->
+              <g stroke="#C2A36B" stroke-width="1.6" stroke-linecap="round">
+                <path d="M110 110H250" />
+                <path d="M110 110V130"/>
+                <path d="M130 110V130"/>
+                <path d="M150 110V130"/>
+                <path d="M170 110V130"/>
+                <path d="M190 110V130"/>
+                <path d="M210 110V130"/>
+                <path d="M230 110V130"/>
+                <path d="M250 110V130"/>
+              </g>
+              <!-- линия бритвы -->
+              <path d="M70 320L170 220" stroke="#C2A36B" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="300" cy="300" r="3" fill="#C2A36B"/>
+              <circle cx="90" cy="90" r="3" fill="#C2A36B"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Пролистать к разделу «О нас»">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- О НАС -->
+    <section class="about section section--light" id="about">
+      <div class="container about__inner">
+        <div class="about__text" data-reveal>
+          <p class="kicker kicker--dark">О нас</p>
+          <h2 class="section__title section__title--dark">Работаем с формой, а не по шаблону</h2>
+          <p>КОНТУР — это барбершоп для тех, кто ценит точность. Мы учитываем форму лица, структуру волос и характер человека, а не стрижём «как в прошлый раз у всех» — поэтому результат держится неделями, а не до первого душа.</p>
+          <p>Наши мастера регулярно учатся у барберов из Москвы и Петербурга и следят за каждой линией вплоть до миллиметра. Здесь нет суеты: крепкий кофе, хороший свет и разговор — по желанию, а не по умолчанию.</p>
+          <p>Загляните один раз — и поймёте, почему возвращаются.</p>
+        </div>
+
+        <ul class="facts" data-reveal>
+          <li class="facts__item">
+            <span class="facts__num">2018</span>
+            <span class="facts__label">год основания</span>
+          </li>
+          <li class="facts__item">
+            <span class="facts__num">3</span>
+            <span class="facts__label">мастера-барбера</span>
+          </li>
+          <li class="facts__item">
+            <span class="facts__num">12&nbsp;000+</span>
+            <span class="facts__label">стрижек создано</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="kicker">Услуги и цены</p>
+          <h2 class="section__title">Понятный прайс, без сюрпризов на кассе</h2>
+        </header>
+
+        <ul class="services__list" data-reveal>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Мужская стрижка</span>
+              <span class="services__desc">Классика, фейд, кроп под укладку</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">1 800 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Стрижка машинкой</span>
+              <span class="services__desc">Быстро, чётко, без лишних слов</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">1 200 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Оформление бороды</span>
+              <span class="services__desc">Форма, контур, уход за кожей</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">1 200 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Королевское бритьё</span>
+              <span class="services__desc">Горячее полотенце, прямая бритва, ритуал</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">2 200 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Стрижка + борода</span>
+              <span class="services__desc">Комплекс с экономией времени и бюджета</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">2 800 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Детская стрижка</span>
+              <span class="services__desc">Для будущих джентльменов до 12 лет</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">1 300 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Укладка</span>
+              <span class="services__desc">Текстура и фиксация на весь день</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">800 ₽</span>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <span class="services__name">Камуфляж седины</span>
+              <span class="services__desc">Естественный оттенок без эффекта «парика»</span>
+            </div>
+            <span class="services__dots" aria-hidden="true"></span>
+            <span class="services__price">1 500 ₽</span>
+          </li>
+        </ul>
+
+        <p class="services__note" data-reveal>Точная длительность и цена уточняются мастером на записи — зависит от густоты и длины волос.</p>
+      </div>
+    </section>
+
+    <!-- МАСТЕРА -->
+    <section class="masters section" id="masters">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="kicker">Команда</p>
+          <h2 class="section__title">Мастера, которым доверяют форму</h2>
+        </header>
+
+        <ul class="masters__list" data-reveal>
+          <li class="master-card">
+            <svg class="master-card__avatar" viewBox="0 0 96 96" aria-hidden="true">
+              <circle cx="48" cy="48" r="46" stroke="#2E2E2E" stroke-width="1.5"/>
+              <circle cx="48" cy="48" r="34" stroke="#C2A36B" stroke-width="1.2"/>
+              <text x="48" y="59" text-anchor="middle" font-family="Oswald, sans-serif" font-size="30" fill="#C2A36B" letter-spacing="1">ИС</text>
+            </svg>
+            <h3 class="master-card__name">Игорь Соколов</h3>
+            <p class="master-card__role">Старший барбер &middot; 12 лет в профессии</p>
+            <p class="master-card__spec">Специализация: авторские стрижки, фейд, камуфляж седины.</p>
+          </li>
+          <li class="master-card">
+            <svg class="master-card__avatar" viewBox="0 0 96 96" aria-hidden="true">
+              <circle cx="48" cy="48" r="46" stroke="#2E2E2E" stroke-width="1.5"/>
+              <circle cx="48" cy="48" r="34" stroke="#C2A36B" stroke-width="1.2"/>
+              <text x="48" y="59" text-anchor="middle" font-family="Oswald, sans-serif" font-size="30" fill="#C2A36B" letter-spacing="1">АВ</text>
+            </svg>
+            <h3 class="master-card__name">Артём Волков</h3>
+            <p class="master-card__role">Барбер-стилист &middot; 7 лет в профессии</p>
+            <p class="master-card__spec">Специализация: борода, королевское бритьё.</p>
+          </li>
+          <li class="master-card">
+            <svg class="master-card__avatar" viewBox="0 0 96 96" aria-hidden="true">
+              <circle cx="48" cy="48" r="46" stroke="#2E2E2E" stroke-width="1.5"/>
+              <circle cx="48" cy="48" r="34" stroke="#C2A36B" stroke-width="1.2"/>
+              <text x="48" y="59" text-anchor="middle" font-family="Oswald, sans-serif" font-size="30" fill="#C2A36B" letter-spacing="1">ДО</text>
+            </svg>
+            <h3 class="master-card__name">Денис Орлов</h3>
+            <p class="master-card__role">Барбер &middot; 5 лет в профессии</p>
+            <p class="master-card__spec">Специализация: классические стрижки, укладка.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="advantages section section--light" id="advantages">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="kicker kicker--dark">Почему КОНТУР</p>
+          <h2 class="section__title section__title--dark">Детали, которые обычно не замечают</h2>
+        </header>
+
+        <ul class="advantages__list" data-reveal>
+          <li class="advantage-card">
+            <svg class="advantage-card__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M24 14V24L31 29" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="advantage-card__title">Запись без ожидания</h3>
+            <p class="advantage-card__text">Онлайн-запись на удобное время — без очередей и звонков администратору.</p>
+          </li>
+          <li class="advantage-card">
+            <svg class="advantage-card__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 8C24 8 15 19 15 27C15 32.5 19 36 24 36C29 36 33 32.5 33 27C33 19 24 8 24 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="advantage-card__title">Премиальная косметика</h3>
+            <p class="advantage-card__text">Работаем с профессиональными линиями для кожи и волос без компромиссов.</p>
+          </li>
+          <li class="advantage-card">
+            <svg class="advantage-card__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M12 20H32V27C32 31.4 28.4 35 24 35H20C15.6 35 12 31.4 12 27V20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M32 22H34C36 22 37.5 23.5 37.5 25.5C37.5 27.5 36 29 34 29H32" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M18 13C18 15 20 15 20 17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M24 13C24 15 26 15 26 17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <h3 class="advantage-card__title">Кофе и атмосфера</h3>
+            <p class="advantage-card__text">Крепкий кофе, хороший свет и плейлист, под который приятно помолчать.</p>
+          </li>
+          <li class="advantage-card">
+            <svg class="advantage-card__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 8L37 13V23C37 31 31.5 36.5 24 40C16.5 36.5 11 31 11 23V13L24 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M18 23L23 28L31 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="advantage-card__title">Стерильные инструменты</h3>
+            <p class="advantage-card__text">Каждый инструмент дезинфицируется и стерилизуется после каждого клиента.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contacts section" id="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__info" data-reveal>
+          <p class="kicker">Контакты</p>
+          <h2 class="section__title">Ждём вас по адресу</h2>
+
+          <dl class="contacts__list">
+            <div class="contacts__row">
+              <dt>Телефон</dt>
+              <dd><a href="tel:+78123184702">+7 (812) 318-47-02</a></dd>
+            </div>
+            <div class="contacts__row">
+              <dt>Адрес</dt>
+              <dd>Санкт-Петербург, ул.&nbsp;Рубинштейна, 11</dd>
+            </div>
+            <div class="contacts__row">
+              <dt>Часы работы</dt>
+              <dd>Пн–Сб: 10:00–21:00<br>Вс: 11:00–19:00</dd>
+            </div>
+          </dl>
+
+          <div class="socials">
+            <a class="socials__link" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="КОНТУР во ВКонтакте">VK</a>
+            <a class="socials__link" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="КОНТУР в Telegram">TG</a>
+            <a class="socials__link" href="https://wa.me/78123184702" target="_blank" rel="noopener noreferrer" aria-label="КОНТУР в WhatsApp">WA</a>
+          </div>
+
+          <button class="btn btn--accent" type="button" data-open-modal>Записаться</button>
+        </div>
+
+        <div class="contacts__map" aria-hidden="true">
+          <svg viewBox="0 0 420 320" fill="none">
+            <rect x="0.5" y="0.5" width="419" height="319" rx="11" stroke="#2E2E2E"/>
+            <path d="M0 90H420" stroke="#2E2E2E" stroke-width="1"/>
+            <path d="M0 210H420" stroke="#2E2E2E" stroke-width="1"/>
+            <path d="M140 0V320" stroke="#2E2E2E" stroke-width="1"/>
+            <path d="M300 0V320" stroke="#2E2E2E" stroke-width="1"/>
+            <path d="M0 150L420 150" stroke="#2E2E2E" stroke-width="1" stroke-dasharray="2 6"/>
+            <circle cx="236" cy="150" r="7" fill="#C2A36B"/>
+            <circle cx="236" cy="150" r="14" stroke="#C2A36B" stroke-width="1.2"/>
+            <path d="M236 150C236 150 236 128 236 128" stroke="#C2A36B" stroke-width="1.2"/>
+            <text x="236" y="112" text-anchor="middle" font-family="Oswald, sans-serif" font-size="14" letter-spacing="1" fill="#C2A36B">КОНТУР</text>
+            <text x="236" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#A39C93">ул. Рубинштейна, 11</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand brand--footer" href="#top" aria-label="КОНТУР — на главную">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M16 12V36" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M16 24L31 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M16 24L31 36" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="16" cy="24" r="2.1" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">КОНТУР</span>
+      </a>
+      <p class="footer__text">Барбершоп в центре Санкт-Петербурга с 2018 года.</p>
+      <p class="footer__copy">&copy; 2026 КОНТУР. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ -->
+  <div class="modal" data-modal hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" aria-label="Закрыть окно записи" data-modal-close>&times;</button>
+
+      <form class="modal__form" data-booking-form novalidate>
+        <p class="kicker">Онлайн-запись</p>
+        <h2 class="modal__title" id="modal-title">Записаться в КОНТУР</h2>
+        <p class="modal__hint">Оставьте контакты — мастер свяжется, чтобы подтвердить время.</p>
+
+        <label class="field">
+          <span class="field__label">Имя</span>
+          <input class="field__input" type="text" name="name" autocomplete="name" required minlength="2" placeholder="Иван Иванов">
+        </label>
+
+        <label class="field">
+          <span class="field__label">Телефон</span>
+          <input class="field__input" type="tel" name="phone" autocomplete="tel" required pattern="^[\d\s\-\+\(\)]{10,}$" placeholder="+7 (___) ___-__-__">
+        </label>
+
+        <label class="field">
+          <span class="field__label">Услуга</span>
+          <select class="field__input" name="service">
+            <option>Мужская стрижка</option>
+            <option>Стрижка машинкой</option>
+            <option>Оформление бороды</option>
+            <option>Королевское бритьё</option>
+            <option>Стрижка + борода</option>
+            <option>Детская стрижка</option>
+            <option>Укладка</option>
+            <option>Камуфляж седины</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span class="field__label">Удобное время</span>
+          <input class="field__input" type="text" name="time" placeholder="Например, сегодня после 18:00">
+        </label>
+
+        <button class="btn btn--accent btn--block" type="submit">Отправить заявку</button>
+      </form>
+
+      <div class="modal__success" data-booking-success hidden>
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" stroke="#C2A36B" stroke-width="1.6"/>
+          <path d="M15 25L21 31L33 17" stroke="#C2A36B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h2 class="modal__title">Заявка отправлена</h2>
+        <p class="modal__hint">Спасибо! Мы свяжемся с вами в ближайшее время, чтобы подтвердить запись.</p>
+        <button class="btn btn--ghost" type="button" data-modal-close>Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
